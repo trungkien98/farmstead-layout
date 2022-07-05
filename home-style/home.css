@@ -1,0 +1,9 @@
+@font-face {
+  font-family: Volkhov-regular;
+  src: url(../Volkhov-Regular.ttf);
+}
+* {
+  font-family: Volkhov-regular;
+  padding: 0;
+  margin: 0;
+}
