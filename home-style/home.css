@@ -11,6 +11,10 @@
   padding: 0;
   margin: 0;
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
 .header {
   background-color: transparent;
   padding: 0px;
@@ -20,6 +24,14 @@
   align-items: center;
   box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
 }
+/* .header .nav-fixed {
+  padding: 0px;
+  border-bottom: none;
+  z-index: 99 !important;
+  background-color: white;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+  height: 70px;
+} */
 .fix-top {
   position: fixed;
   top: 0;
@@ -27,6 +39,8 @@
   left: 0;
   z-index: 1030;
 }
+/* test */
+
 .container {
   max-width: 1280px;
   width: 100%;
@@ -34,7 +48,6 @@
   padding-left: 15px;
 }
 .header .navbar {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -66,31 +79,27 @@
   color: #fb811e;
 }
 
-.carousel-left {
-  position: absolute;
-  left: 10em;
-  top: 250px;
-  z-index: 100;
-  height: 100%;
+.carousel {
+  position: relative;
 }
+.carousel .carousel-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
 .carousel-left h2 {
   color: rgb(244 244 244);
   font-size: 120px;
   font-weight: bold;
   margin-left: -0.5em;
-  position: absolute;
-  top: -110px;
-  overflow: hidden;
 }
 
 .carousel-right {
-  position: absolute;
-  right: 0;
   height: 100%;
 }
-.carousel-right .carousel-text {
-  z-index: 30;
-}
+
 .carousel .carousel-text h3 {
   font-size: 50px;
   line-height: 60px;
@@ -110,4 +119,139 @@
 }
 .btn-style:hover {
   background: rgb(0 159 77);
+}
+.features .feat-content {
+  display: flex;
+  align-items: center;
+}
+
+.features .feat-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.features h5 {
+  color: rgb(251, 129, 30);
+}
+.features h3 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+}
+.features .feat-right .feat-item {
+  padding: 40px 30px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 1rem 3rem hsl(0deg 0% 0% / 3%);
+  background-color: white;
+}
+.features .feat-right .feat-item img {
+  max-width: 65px;
+  display: block;
+  margin: 0 auto;
+}
+.features .feat-right a {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-top: 25px;
+  display: block;
+  color: black;
+}
+.features .feat-right .feat-item:hover {
+  transition: 0.3s;
+  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+}
+
+.service {
+  background: rgb(0, 197, 77);
+}
+.service .service-tittle {
+  position: relative;
+}
+.service .service-tittle h5 {
+  font-size: 22px;
+  color: white;
+}
+.service .service-tittle h3 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  color: white;
+}
+.service .service-tittle p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: white;
+}
+.service h4 {
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  z-index: 10;
+  opacity: 0.14;
+  font-size: 10vw;
+  right: 50%;
+
+  bottom: 50%;
+  transform: translate(50%, 50%);
+}
+
+.service .service-content {
+  display: flex;
+
+  justify-content: center;
+  width: 100%;
+}
+.service .service-content .service-item {
+  padding-right: 20px;
+  width: 100%;
+}
+.service .service-content .service-item img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+}
+.service .service-content .service-item .service-item-bot {
+  background: white;
+
+  padding: 30px 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 25px 98px 0 rgb(19 19 19 / 3%);
+  border: 1px solid rgb(238, 238, 238);
+  border-top: none;
+}
+.service .service-content .service-item .service-item-bot span {
+  color: #009f4d;
+  display: inline-block;
+  background: rgb(0 159 77 / 16%);
+  padding: 5px 20px;
+  border-radius: 15px;
+  font-weight: 600;
+}
+.service .service-content .service-item .service-item-bot a {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  color: black;
+  margin: 15px 0;
+  text-decoration: none;
+}
+
+.whyUs .whyUs-content {
+  display: flex;
+}
+.whyUs .whyUs-content .whyUs-text {
+  padding: 0 20px;
+}
+.whyUs .whyUs-content .whyUs-text h5 {
+  color: rgb(251, 129, 30);
+}
+.whyUs .whyUs-content .whyUs-text h3 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
 }
