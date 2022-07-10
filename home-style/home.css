@@ -11,10 +11,7 @@
   padding: 0;
   margin: 0;
 }
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .header {
   background-color: transparent;
   padding: 0px;
@@ -255,3 +252,65 @@
   line-height: 50px;
   font-weight: 600;
 }
+.whyUs .whyUs-text .whyUs-info {
+  display: flex;
+  justify-content: space-between;
+}
+.whyUs .whyUs-img {
+  position: relative;
+}
+.whyUs .whyUs-img img {
+  border-radius: 30px;
+  /* height: 90%; */
+}
+.whyUs .whyUs-img .whyUs-box {
+  background-color: #fb811e;
+  color: #fff;
+  position: absolute;
+  left: -85px;
+  bottom: 38px;
+  padding: 40px;
+  box-shadow: 30px 30px 30px rgb(0 0 0 / 20%);
+  min-width: 300px;
+  border-radius: 0 0 100px 0;
+  text-align: center;
+}
+.whyUs .whyUs-img .imginfo__title {
+  font-size: 70px;
+  line-height: 80px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.activity .activity-item .unit {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  transition: 0.4s ease-in;
+}
+.activity .activity-item .unit:hover {
+  border: 1px solid #eee;
+}
+.activity .activity-item .unit:hover h4 {
+  color: #009f4d;
+}
+
+.activity .activity-item .unit img {
+  width: 60px;
+}
+
+.activity .activity-item .unit h4 {
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #060606;
+}
+.activity .activity-item .unit p {
+  margin-top: 10px;
+  color: #707070;
+}
+/* .activity .activity-item {
+  border: 1px solid white;
+  transition: 0.4s;
+} */
