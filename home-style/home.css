@@ -314,3 +314,76 @@
   border: 1px solid white;
   transition: 0.4s;
 } */
+
+.gallery {
+  margin-bottom: 1.5em;
+  display: grid;
+}
+
+.gallery .column {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.gallery .gallery-tittle h5 {
+  color: #fb811e;
+  font-size: 22px;
+}
+.gallery .gallery-tittle h3 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  color: #060606;
+}
+.gallery .gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+.gallery .gallery-item img {
+  width: 100%;
+}
+.gallery .gallery-item h5 {
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  font-weight: bold;
+  background: rgb(255 255 255 / 27%);
+  padding: 6px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: 20px;
+}
+.gallery .gallery-item::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -75%;
+  display: block;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  transform: skewX(-17deg);
+  transition: all 0.75s;
+}
+.gallery .gallery-item:hover:before {
+  left: 100%;
+}
+
+.story {
+  background-image: url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/bg1.jpg);
+  position: relative;
+}
+.story:before {
+  content: "";
+  background: rgb(10 10 10 / 52%);
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+}
