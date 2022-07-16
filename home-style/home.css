@@ -1,10 +1,10 @@
 @font-face {
   font-family: Volkhov-regular;
-  src: url(../Volkhov-Regular.ttf);
+  src: url(../font/Volkhov-Regular.ttf);
 }
 @font-face {
   font-family: Bolder;
-  src: url(../Volkhov-Bold.ttf);
+  src: url(../font/Volkhov-Bold.ttf);
 }
 * {
   font-family: Volkhov-regular;
@@ -444,4 +444,7 @@ footer li a:hover {
 }
 .footer button:hover {
   opacity: 0.95;
+}
+
+@media screen and (max-width: 600px) {
 }
