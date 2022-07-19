@@ -1,13 +1,5 @@
-@font-face {
-  font-family: Volkhov-regular;
-  src: url(../font/Volkhov-Regular.ttf);
-}
-@font-face {
-  font-family: Bolder;
-  src: url(../font/Volkhov-Bold.ttf);
-}
 * {
-  font-family: Volkhov-regular;
+  font-family: "Source Sans Pro", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -77,6 +69,25 @@ p {
 }
 .header .navbar .moon:hover {
   color: #fb811e;
+}
+
+.header .search-right input[type="search"] {
+  background: #fff
+    url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png)
+    no-repeat 10px center;
+  border: solid 1px #eee;
+  padding: 0 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 10em;
+}
+.header .search-right input[type="search"]:focus {
+  width: 200px;
+  padding-left: 32px;
+  color: #000;
+  background-color: #fff;
+  cursor: auto;
+  padding-right: 15px;
 }
 
 .carousel {
@@ -389,6 +400,25 @@ p {
   min-height: 100%;
   left: 0;
   right: 0;
+}
+.story .btn-color {
+  background-color: #aaa;
+  width: 10px;
+  height: 10px;
+}
+.story .btn-color:hover {
+  color: #fb811e;
+}
+.story h3,
+.story p,
+.story q {
+  color: white;
+}
+.story span {
+  font-size: 20px;
+  color: #fb811e;
+  font-weight: 600;
+  display: inline-block;
 }
 
 .footer a {

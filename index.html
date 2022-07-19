@@ -23,7 +23,9 @@
     crossorigin="anonymous"
   />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../home-style/home.css" />
 
   <body>
@@ -31,16 +33,21 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg">
           <h1>
-            <a href="./home.html" class="navbar-brand"
+            <a href="./index.html" class="navbar-brand"
               >Farmstead
               <i class="fa fa-leaf" aria-hidden="true"></i>
             </a>
           </h1>
 
           <div class="navbar">
-            <form action="">
+            <!-- <form action="">
               <input type="search" placeholder="search" />
-            </form>
+            </form> -->
+            <div class="search-right ml-lg-3 ">
+              <form action="https://wp.w3layouts.com/farmstead/" method="GET" id="demo-2">
+                <input type="search" name="s" placeholder="Search">
+              </form>
+            </div>
             <i class="gg-moon moon"></i>
             <nav class="navbar navbar-expand-lg navbar-light">
               <div class="container-fluid">
@@ -64,7 +71,7 @@
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#"
+                      <a class="nav-link active" aria-current="page" href="./about.html"
                         >About</a
                       >
                     </li>
@@ -260,23 +267,7 @@
         </div>
        
         <div class="service-content ">
-          <div class="service-item ">
-            <div class="service-item-top">
-              <a href="services">
-                <img
-                  class="d-block img-responsive"
-                  src="https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/service1.jpg"
-                  alt="card-image"
-                />
-              </a>
-            </div>
-            <div class="service-item-bot">
-              <span>Natural</span><br>
-              <a href="services" class="service-heading">Agriculture Products</a>
-              <p>Sed ut perspiciatis unde omnis iste natus sit accusantium doloremque
-                laudantium, totam rem aperiam</p>
-            </div>
-            </div>
+          
             <div class="service-item ">
               <div class="service-item-top">
                 <a href="services">
@@ -523,10 +514,10 @@
     <section class="story py-5">
       <div class="container py-lg-5">
         <div id="story-slide" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators alpha">
-            <button type="button" data-bs-target="#story-slide" data-bs-slide-to="0" class="active bg-warning rounded-circle" aria-current="true" aria-label="Slide 1" ></button>
-            <button type="button" data-bs-target="#story-slide" data-bs-slide-to="1" aria-label="Slide 2" class="bg-warning rounded-circle"></button>
-            <button type="button" data-bs-target="#story-slide" data-bs-slide-to="2" aria-label="Slide 3" class="bg-warning rounded-circle"></button>
+          <div class="carousel-indicators ">
+            <button type="button" data-bs-target="#story-slide" data-bs-slide-to="0" class="active  rounded-circle btn-color" aria-current="true" aria-label="Slide 1" ></button>
+            <button type="button" data-bs-target="#story-slide" data-bs-slide-to="1" aria-label="Slide 2" class="rounded-circle btn-color"></button>
+            <button type="button" data-bs-target="#story-slide" data-bs-slide-to="2" aria-label="Slide 3" class="rounded-circle btn-color"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item story-item active">
@@ -562,12 +553,14 @@
                 </div>
                 <div class="story-item-right col-6 ">
                   <span class="fa fa-quote-left"></span>
-                  <p class="text-start ">Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita
-                    beatae
-                    laudantium Quas minima sunt natus tempore, maiores aliquid modi felis
-                    sequi optio lacinia id ipsum non velit, culpa.
-                    voluptate rem ullam dolore nisi est quasi, doloribus tempora.
-                    est elit. Non quae, fugiat ad libero justo sed amet.</p>
+                  <blockquote>
+                    <q class="text-start ">Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita
+                      beatae
+                      laudantium Quas minima sunt natus tempore, maiores aliquid modi felis
+                      sequi optio lacinia id ipsum non velit, culpa.
+                      voluptate rem ullam dolore nisi est quasi, doloribus tempora.
+                      est elit. Non quae, fugiat ad libero justo sed amet.</q>
+                    </blockquote>
                 </div>
                 </div>
             </div>
@@ -582,12 +575,14 @@
                 </div>
                 <div class="story-item-right col-6 ">
                   <span class="fa fa-quote-left"></span>
-                  <p class="text-end ">Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita
-                    beatae
-                    laudantium Quas minima sunt natus tempore, maiores aliquid modi felis
-                    sequi optio lacinia id ipsum non velit, culpa.
-                    voluptate rem ullam dolore nisi est quasi, doloribus tempora.
-                    est elit. Non quae, fugiat ad libero justo sed amet.</p>
+                  <blockquote>
+                    <q class="text-start ">Lorem ipsum dolor sit amet int consectetur adipisicing elit. Velita
+                      beatae
+                      laudantium Quas minima sunt natus tempore, maiores aliquid modi felis
+                      sequi optio lacinia id ipsum non velit, culpa.
+                      voluptate rem ullam dolore nisi est quasi, doloribus tempora.
+                      est elit. Non quae, fugiat ad libero justo sed amet.</q>
+                    </blockquote>
                 </div>
                 </div>
             </div>
