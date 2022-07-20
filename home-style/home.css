@@ -402,7 +402,7 @@ p {
   right: 0;
 }
 .story .btn-color {
-  background-color: #aaa;
+  background-color: #fb811e;
   width: 10px;
   height: 10px;
 }
@@ -476,5 +476,12 @@ footer li a:hover {
   opacity: 0.95;
 }
 
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 980px) {
+}
+@media screen and (max-width: 768px) {
+}
 @media screen and (max-width: 600px) {
 }

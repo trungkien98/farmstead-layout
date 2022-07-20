@@ -336,13 +336,14 @@ a.navbar-brand:hover {
   right: 0;
 }
 .story .btn-color {
-  background-color: #aaa;
+  background-color: #fb811e;
   width: 10px;
   height: 10px;
 }
 .story .btn-color:hover {
   color: #fb811e;
 }
+
 .story h3,
 .story p,
 .story q {
